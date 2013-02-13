@@ -1,0 +1,11 @@
+inherit rubygem
+
+NAME="ruby-vte"
+VERSION=1.2.1
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby VTE bindings"
+DESCRIPTION="Ruby/VTE is a Ruby binding of VTE."
+HOMEPAGE="http://ruby-gnome2.sourceforge.jp/"
+
+DEPS_PATH="/usr/lib/ruby/gems/${RUBY_VERSION}/gems/glib2-*/lib:/usr/lib/ruby/gems/${RUBY_VERSION}/gems/gtk2-*/lib"
