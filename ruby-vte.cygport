@@ -1,12 +1,14 @@
 inherit rubygem
 
 NAME="ruby-vte"
-VERSION=3.1.1
+VERSION=3.1.8
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby VTE bindings"
 DESCRIPTION="Ruby/VTE is a Ruby binding of VTE."
 HOMEPAGE="http://ruby-gnome2.sourceforge.jp/"
+
+PATCH_URI="3.1.8-link-deps.patch"
 
 PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-doc"
 ruby_vte_CONTENTS="--exclude=sample ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"

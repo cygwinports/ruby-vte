@@ -1,0 +1,13 @@
+atk is now pure G-I
+
+--- origsrc/vte-3.1.8/ext/vte/extconf.rb	2017-09-26 10:39:04.498685500 -0500
++++ src/vte-3.1.8/ext/vte/extconf.rb	2017-09-26 10:50:36.391900800 -0500
+@@ -41,7 +41,7 @@ unless required_pkg_config_package(packa
+   exit(false)
+ end
+ 
+-["glib2", "atk", "gtk2"].each do |package|
++["glib2", "gtk2"].each do |package|
+   directory = "#{package}#{version_suffix}"
+   build_dir = "#{directory}/tmp/#{RUBY_PLATFORM}/#{package}/#{RUBY_VERSION}"
+   add_depend_package(package, "#{directory}/ext/#{package}",
